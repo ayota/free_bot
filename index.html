@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<head>
+   <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
+   <script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
+   
+   
+   
+   
+
+
+<style>
+
+#map {
+  position:absolute;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+}
+
+</style>
+</head>
+<body>
+
+        <div id="map" style="width: 960px; height: 500px"></div>
+
+<script>
+
+
+
+var map = L.map('map').setView([38.8951, -77.0367], 10);
+
+L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 18,
+    attribution: 'Map data (c) <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+
+var circle_1 = L.circle([38.8951, -77.0367], 300, {
+                            color: '#FD00B3',
+                            fillColor: '#FD00B3',
+                            fillOpacity: 0.5
+                            });
+circle_1.bindPopup("<h3>Free Moving boxes and packing paper</h3><p>DC</p><a href='http://http://washingtondc.craigslist.org/mld/zip/4713399882.html' target='_blank'>view ad</a>");
+map.addLayer(circle_1)
+
+var circle_2 = L.circle([38.8951, -77.0367], 300, {
+                            color: '#D8B4AC',
+                            fillColor: '#D8B4AC',
+                            fillOpacity: 0.5
+                            });
+circle_2.bindPopup("<h3>Free ping pong table</h3><p>DC</p><a href='http://http://washingtondc.craigslist.org/nva/zip/4713420389.html' target='_blank'>view ad</a>");
+map.addLayer(circle_2)
+
+var circle_3 = L.circle([44.933143, 7.540121], 300, {
+                            color: '#B5B245',
+                            fillColor: '#B5B245',
+                            fillOpacity: 0.5
+                            });
+circle_3.bindPopup("<h3>Free Furniture and Lighting (30th Ave and Buckeye)</h3><p>None</p><a href='http://http://washingtondc.craigslist.org/nva/zip/4713402677.html' target='_blank'>view ad</a>");
+map.addLayer(circle_3)
+
+var circle_4 = L.circle([38.882334, -77.1710914], 300, {
+                            color: '#50EFAF',
+                            fillColor: '#50EFAF',
+                            fillOpacity: 0.5
+                            });
+circle_4.bindPopup("<h3>Free Mulch!</h3><p>Falls Church, VA</p><a href='http://http://washingtondc.craigslist.org/nva/zip/4678840587.html' target='_blank'>view ad</a>");
+map.addLayer(circle_4)
+
+var circle_5 = L.circle([38.9312353, -77.3570209094], 300, {
+                            color: '#FC66E5',
+                            fillColor: '#FC66E5',
+                            fillOpacity: 0.5
+                            });
+circle_5.bindPopup("<h3>CURB ALERT - Propane Tanks (containing fuel)</h3><p>Reston, VA</p><a href='http://http://washingtondc.craigslist.org/nva/zip/4713435605.html' target='_blank'>view ad</a>");
+map.addLayer(circle_5)
+
+var circle_6 = L.circle([38.9215002, -77.0421992], 300, {
+                            color: '#454976',
+                            fillColor: '#454976',
+                            fillOpacity: 0.5
+                            });
+circle_6.bindPopup("<h3>Voyagers Volume One (For Indigo Child/Adult) </h3><p>Kalorama / Adams Morgan</p><a href='http://http://washingtondc.craigslist.org/doc/zip/4713428800.html' target='_blank'>view ad</a>");
+map.addLayer(circle_6)
+
+var circle_7 = L.circle([38.8895563, -77.0094206], 300, {
+                            color: '#C1FB6F',
+                            fillColor: '#C1FB6F',
+                            fillOpacity: 0.5
+                            });
+circle_7.bindPopup("<h3>FREE Gray metal utility shelving</h3><p>Capitol Hill SE</p><a href='http://http://washingtondc.craigslist.org/doc/zip/4713416727.html' target='_blank'>view ad</a>");
+map.addLayer(circle_7)
+
+var circle_8 = L.circle([38.8951, -77.0367], 300, {
+                            color: '#F21002',
+                            fillColor: '#F21002',
+                            fillOpacity: 0.5
+                            });
+circle_8.bindPopup("<h3>Candleholders</h3><p>DC</p><a href='http://http://washingtondc.craigslist.org/nva/zip/4713435461.html' target='_blank'>view ad</a>");
+map.addLayer(circle_8)
+
+var circle_9 = L.circle([38.8951, -77.0367], 300, {
+                            color: '#F814D9',
+                            fillColor: '#F814D9',
+                            fillOpacity: 0.5
+                            });
+circle_9.bindPopup("<h3>Free Black Bookshelf</h3><p>DC</p><a href='http://http://washingtondc.craigslist.org/mld/zip/4713403860.html' target='_blank'>view ad</a>");
+map.addLayer(circle_9)
+
+var circle_10 = L.circle([39.0067768, -76.7791365], 300, {
+                            color: '#63A3AA',
+                            fillColor: '#63A3AA',
+                            fillOpacity: 0.5
+                            });
+circle_10.bindPopup("<h3>Free sectional sofa</h3><p>Bowie</p><a href='http://http://washingtondc.craigslist.org/mld/zip/4713428197.html' target='_blank'>view ad</a>");
+map.addLayer(circle_10)
+
+
+
+
+
+
+</script>
+
+</body>
